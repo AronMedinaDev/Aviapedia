@@ -1,0 +1,64 @@
+h1 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 88%;
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+p {
+  font-size: 24px;
+}
+.title {
+  font-size: 50px;
+}
+
+.navbar {
+  background: #275adb;
+  background: linear-gradient(
+    190deg,
+    rgba(39, 90, 219, 1) 0%,
+    rgba(98, 158, 222, 1) 63%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 110px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* keep nav height from Bootstrap consistent */
+.navbar {
+  height: 110px;
+}
+
+.manufacure:hover {
+  color: #6d92ee;
+}
+ul {
+  font-size: 25px;
+}
+.navbar-brand {
+  font-size: 30px;
+}

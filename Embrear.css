@@ -1,0 +1,42 @@
+
+
+.air-container {
+  width: 100%;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.full-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+h2 {
+  text-align: center;
+}
+
+.order {
+  column-count: 3;
+}
+
+.embrear {
+  width: 100%;
+  break-inside: avoid;
+  margin: 10px;
+}
+
+.image-sub {
+  font-size: 12px;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+
+.air-container img{
+  object-fit: cover;
+  height: 247px;
+}
