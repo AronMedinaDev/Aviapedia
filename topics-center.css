@@ -1,0 +1,8 @@
+.full-container {
+ margin-top: 20px;
+  
+}
+.air-container img{
+    object-fit: contain;
+
+}

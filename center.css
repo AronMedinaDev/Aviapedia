@@ -1,5 +1,5 @@
 .title {
-  font-size: 50px;
+  font-size: 40px;
   text-align: start;
 }
 body {
@@ -7,6 +7,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-style: normal;
+  overscroll-behavior-x: none;
 }
 main {
   max-width: 88%;
@@ -16,11 +17,10 @@ img {
   border-radius: 15px;
   width: 100%;
   height: auto;
+  
+  
 }
 
-p {
-  font-size: 24px;
-}
 
 .sub-title {
   font-size: 30px;
@@ -37,13 +37,7 @@ header {
 /* keep nav height from Bootstrap consistent */
 .navbar {
   height: 110px;
-  background: #275adb;
-  background: linear-gradient(
-    190deg,
-    rgba(39, 90, 219, 1) 0%,
-    rgba(98, 158, 222, 1) 63%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: transparent !important;
 }
 
 .air-container {
@@ -81,7 +75,7 @@ footer {
     rgba(98, 158, 222, 1) 63%,
     rgba(255, 255, 255, 1) 100%
   );
-  height: 350px;
+ 
   text-align: center;
   padding: 40px;
   margin-top: 50px;
@@ -98,21 +92,21 @@ footer {
 .navbar-brand {
   font-size: 30px;
 }
-#content3 {
+.content3 {
   position: absolute;
   display: flex;
   flex-direction: column;
-  background-color: white;
   display: none;
-  background: #275adb;
+  width: 10em;
+   background: #275adb;
   background: linear-gradient(
     190deg,
     rgba(39, 90, 219, 1) 0%,
     rgba(98, 158, 222, 1) 63%,
     rgba(255, 255, 255, 1) 100%
   );
-  width: 10em;
-  border-radius: 15px;
+
+ 
 }
 #dropdown a {
   margin: 15px;
@@ -122,10 +116,10 @@ footer {
   display: block;
 }
 
-#dropdown:hover #content3 {
+#dropdown:hover .content3 {
   display: block;
 }
-#content3 hr {
+.content3 hr {
   width: 80%;
   margin: 0 auto;
 }
@@ -169,10 +163,112 @@ ol li {
 }
 .horizontal-p img{
 margin: 20px;
-
 }
+
 @keyframes line-expand {
   from {
     transform: scale(2, 1);
     }
   }
+
+html {
+  overscroll-behavior-x: none;
+}
+
+ 
+
+ #headed{
+  background: #275adb;
+  background: linear-gradient(
+    190deg,
+    rgba(39, 90, 219, 1) 0%,
+    rgba(98, 158, 222, 1) 63%,
+    rgba(255, 255, 255, 1) 100%
+  );
+ }
+
+ .main-text {
+  font-size: 22px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .main-text {
+  font-size: 18px;
+  line-height: 1.6;
+  }
+ 
+  .title {
+  font-size: 32px;
+  text-align: start;}
+
+  .sub-title {
+  font-size: 25px;
+  margin-top: 20px;
+}
+}
+.image-sub {
+  font-size: 12px;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+
+.air-container img{
+  object-fit: cover;
+  height: 247px;
+}
+
+.full-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* When screen is 1000px or smaller */
+@media (max-width: 1000px) {
+  .full-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .list-order {
+  column-count: 2 !important;
+}
+.horizontal-p {
+  flex-direction: column;
+  align-items: center;
+}}
+
+/* When screen is 760px or smaller */
+@media (max-width: 760px) {
+  .full-container {
+    grid-template-columns: 1fr !important;
+  }
+    .list-order {
+  column-count: 1 !important;
+
+}
+
+}
+.air-container {
+  width: 100%;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
+h2 {
+  text-align: center;
+}
+
+.list-order {
+  column-count: 3;
+}
+.lists-of-lists {
+  width: 100%;
+  break-inside: avoid;
+  margin: 10px;
+}
